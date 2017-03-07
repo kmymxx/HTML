@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>jx</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		body {
+			width: 980px;
+			height: 1386px;
+			background-color: #fff;
+			margin-left: 45px;
+		}
+		.nav {
+			width: 892px;
+			height: 63px;
+			position: relative;
+		}
+		.nav-l {
+			width: 110px;
+			height: 61px;
+			background-color: #d45d5c;
+			color: #fff;
+			font-size: 12px;
+			font-family: "黑体";
+			float: left;
+		}
+		.nav-r {
+			color: #d45d5c;
+			font-size: 12px;
+			font-family: "黑体";
+			float: right;
+		}
+		.nav p {
+			position: absolute;
+			bottom: 6px;
+			
+		}
+		.nav .lt {
+			padding-left: 5px;
+		}
+		.nav .rt {
+			right:0;
+		}
+		hr {
+			background-color: #938e8c;
+			width: 892px;
+			height: 2px;
+			border-width: 0;
+		}
+		.sub {
+			width: 892px;
+			height: 301px;
+		}
+		.sub-l {
+			background: url("images/06.png") no-repeat;
+			width: 641px;
+			height: 301px;
+			margin-top: 35px;
+			float: left;
+		}
+		.sub-l-l {
+			width:191px;
+			height: 301px;
+			background-color: green;
+			opacity: 0.3;
+			float: left;
+		}
+		.sub-l-r {
+			width:191px;
+			height: 301px;
+			background-color: red;
+			opacity: 0.3;
+			float: right;
+		}
+		.sub-r {
+			width: 203px;
+			float: right;
+			margin-top: 35px;
+			position: relative;
+		}
+		.sub-r hr {
+			width: 203px;
+			height: 2px;
+			background-color: #cc8091;
+			border-width: 0;
+			margin-bottom: 5px;
+		}
+		.sub-r .title:first-letter
+			  	{
+			  	color:#000;
+			  	font-size:x-large;
+			  	}		
+		.sub-r .title:first-line
+			  	{
+			  	color:#000;
+			  	font-variant:small-caps;
+			  	font-size: 24px;
+			  	font-family: "微软雅黑";
+			  	text-decoration:underline;
+			  	}
+		.sub-r .title-1 {
+			font-size: 12px;
+			color: #676767;
+			font-family: "KaiTi";
+			font-style: oblique; 
+		}
+		.sub-r .nb {
+			font-size: 116px;
+			color: #75b86b;
+			font-family: "微软雅黑";
+			transform: skew(-10deg);
+			padding-top: 10px;
+		}
+		.sub-bot {
+			font-size: 55px;
+			color: #cc8091;
+			font-family: "微软雅黑";
+			position: relative;
+			top: -18px;
+		}
+		.sub-bot-1 {
+			font-size: 21px;
+			color: #cc8091;
+			font-family: "微软雅黑";
+			position: absolute;
+			top: 265px;
+			left: 80px;
+		}
+		.sub-bot-2 {
+			font-size: 12px;
+			color: #bbb7b7;
+			font-family: "微软雅黑";
+			position: absolute;
+			top: 285px;
+			left: 80px;
+		}
+		.list-1 {
+			width: 230px;
+			height: 168px;
+			float: left;
+			padding:32px 16px 0 0;
+		}
+		.list-1-1 {
+			font-size: 16px;
+			font-family: "微软雅黑";
+			color: #418c59;
+			font-weight: bold;
+		}
+		.list-1-2 {
+			font-size: 12px;
+			color: #767777;
+			font-family: "宋体";
+			line-height: 18px;
+		}
+		.list-2 {
+			width: 230px;
+			height: 168px;
+			float: left;
+			padding:32px 16px 0 0;
+		}
+		.list-2-1 {
+			font-size: 16px;
+			font-family: "微软雅黑";
+			color: #d2994f;
+			font-weight: bold;
+		}
+		.list-2-2 {
+			font-size: 12px;
+			color: #231815;
+			font-family: "微软雅黑";
+			opacity: 0.7;
+		}
+		.list-3 {
+			float: left;
+			width: 230px;
+			height: 168px;
+		}
+		.list-3-1 {
+			font-size: 16px;
+			color: #cc7680;
+			font-weight: bold;
+			font-family: "微软雅黑";
+		}
+		.list-3-2 {
+			font-size: 12px;
+			color: #231815;
+			font-family: "微软雅黑";
+			opacity: 0.7;
+		}
+		.list-3 span {
+			font-style: oblique; 
+			color: #cd4a48;
+		}
+		.con {
+			width:415px;
+			height: 608px;
+			margin-top: 300px;
+			overflow: hidden;
+		}
+		.con h1 {
+			font-weight: bold;
+			color: #114568;
+			font-size: 42px;
+			font-family: "黑体";
+			line-height: 40px;
+		}
+		.con span {
+			font-size: 72px;
+			color: #f5e327;
+			font-style: oblique;
+			font-family: "SimHei";
+			line-height: 72px;
+		}
+		.con h2 {
+			font-weight: bold;
+			color: #114568;
+			font-size: 33px;
+			font-family: "黑体";
+			line-height: 50px;
+			padding-bottom: 5px;
+		}
+		.con hr {
+			width: 415px;
+			background-color: #114568;
+			margin-bottom: 20px;
+		}
+		.con p {
+			font-size: 12px;
+			color: #767777;
+			font-family: "宋体";
+		}
+		.con1:first-letter {
+			color: #f5e327;
+			font-size: 70px;
+			font-family: "微软雅黑";
+			float: left;
+			padding-right: 10px;
+		} 
+		.con2 {
+			text-indent: 100%;
+		}
+		.con-2 {
+			text-indent: 2em;
+		}
+		.pic {
+			float: right;
+			margin: 15px 10px 10px 15px;
+		}
+		.con-rt {
+			position: relative;
+			position: absolute;
+			top: 660px;
+			right: 490px;
+		}
+		.con-rt-1 {
+			width: 458px;
+			height: 61px;
+			background-color: #f3b3b3;
+			opacity: 0.9;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			overflow: hidden;
+		}
+		.con-rt-2 {
+			border-width: 3px;
+			height: 44px;
+			border-color: #72b16a;
+			border-left-style: solid;
+			margin: 9px 50px;
+		}
+		.con-rt-2-1 {
+			font-size: 26px;
+			font-family: "微软雅黑";
+			color: #fff;
+			padding-left: 20px;
+		}
+		.con-rt-2-1 span {
+			padding-right: 10px;
+		}
+		.con-rt-2-2 {
+			font-family: "微软雅黑";
+			color: #72b16a;
+			font-size: 12px;
+			text-indent: 140%;
+		}
+		.con-rt-down {
+			width: 459px;
+			height: 318px;
+			background-color: #f3f1c3;
+			position: relative;
+			position: absolute;
+			right: 490px;
+			top: 960px;
+
+		}
+		.con-rt-down li {
+			font-family: "宋体";
+			font-size: 16px;
+			color: #5a5b5b;
+			padding-top: 25px;
+			padding-left: 20px;
+		}
+		.con-rt-down em {
+			font-size: 12px;
+			font-family: "微软雅黑";
+			color: #5a5b5b;
+			line-height: 20px;
+		}
+		.con-rt-down span {
+			color: #2166a5;
+			font-size: 12px;
+		}
+		.con-rt-down1 {
+			width: 260px;
+			height: 160px;
+			background-color: #ec7272;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+		.con-rt-down1 span {
+			font-family: "微软雅黑";
+			font-size: 110px;
+			color: #fff;
+			line-height: 160px;
+			padding-left: 10px;
+		}
+		.con-rt-down2 {
+			border-width: 2px;
+			height: 86px;
+			border-color: #fff;
+			border-left-style: solid;
+			position: absolute;
+			top: 38px;
+			left: 80px;
+			line-height: 12px;
+		}
+		.con-rt-down3 {
+			font-size: 21px;
+			font-family: "黑体";
+			padding-left: 10px;
+
+		}
+		.con-rt-down3 em {
+			color: #fff;
+			line-height: 24px;
+		}
+		.con-rt-down4 {
+			font-size: 12px;
+			font-family: "黑体";
+			color: #fff;
+			line-height: 6px;
+			padding-left: 10px;
+		}
+		.con-rt-down-down {
+			width: 190px;
+			height: 160px;
+			position: absolute;
+			top: 158px;
+			right: 0px;
+		}
+		.con-rt-down-down p {
+			font-family: "黑体";
+			padding:15px 0 0 10px;
+			font-size: 14px;
+			line-height: 16px;
+			color: #5a5b5b;
+			text-indent: 2.3em;
+		}
+		.con-rt-down-down span {
+			font-family: "黑体";
+			font-size: 72px;
+			color: #d45d5c;
+			position: relative;
+		}
+		.con-rt-down-down1 {
+			top: -120px;
+			left: -30px;
+		}
+		.con-rt-down-down2 {
+			top: -20px;
+			left: 50px;
+		}
+		.foot {
+			margin-top: 50px;
+		}
+		.foot hr {
+			width: 892px;
+			height: 1px;
+			background-color: #938e8c;
+		}
+		.foot p {
+			font-family: "黑体";
+			font-size: 12px;
+			color: #d45d5c;
+			float: right;
+			padding-right: 90px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<div class="nav-l"><p class="lt">ife.baidu.com</p></div>
+		<div class="nav-r"><p class="rt">2017.03</p></div>
+		<hr />
+	</div>
+		<div class="sub">
+		<div class="sub-l">
+			<div class="sub-l-l"></div>
+			<div class="sub-l-r"></div>
+		</div>
+		<div class="sub-r">
+			<hr />
+			<p class="title">About</p>
+			<p class="title">Technologe</p>
+			<span class="title-1">About technologe about technologe    </span>
+			<span class="title-1">about technologe</span>
+			<p class="nb">700</p>
+			<span class="sub-bot">3.2</span>
+			<span class="sub-bot-1">CSS</span>
+			<span class="sub-bot-2">csscsscscscs</span>
+		</div>
+		</div>
+	<div class="list">
+		<dl class="list-1">
+			<dt class="list-1-1"><u>What</u></dt>
+			<dd class="list-1-2">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前	端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+			</dd>
+		</dl>
+		<dl class="list-2">
+			<dt class="list-2-1"><u>When</u></dt>
+			<dd class="list-2-2">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+			</dd>
+		</dl>
+		<dl class="list-3">
+			<dt class="list-3-1"><u>How</u></dt>
+			<dd class="list-3-2">前端前端前
+			<br />前端前端前前端前端
+			<br />前前端前端前前端前端前
+			<br />
+			<br />
+			<br />what--------<span>40%</span>
+			<br />
+			<br />what--------<span>30%</span>
+			<br />
+			<br />what--------<span>20%</span>
+			</dd>
+		</dl>
+	</div>
+	<div class="con">
+		<h1><span>THE</span> TECHNOLOGE<br />OF FRONT</h1>
+		<h2>前端技术领域</h2>
+		<hr />
+		<p class="con1">前<p class="con2">前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技<img src="images/04.png" alt="" class="pic" />.术前端技术前端技术前端技术.前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端技术前端前。
+		</p>
+		</p>
+		<p class="con-2">
+		前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端。
+		</p>
+		<p class="con-2">
+		前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前前端前端前端前端前端前端。
+		</p>
+	</div>
+	<div class="con-rt">
+		<img src="images/05.png" alt="" />
+		<div class="con-rt-1">
+			<table  class="con-rt-2">
+				<tr>
+					<td class="con-rt-2-1"><span>前端技术</span></td>
+					<td class="con-rt-2-2"><em>前前端技术前端技术</em></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="con-rt-down">
+			<ul>
+				<li><span>▲</span> 前端前端前端前端..........................<em>前端前端前</em></li>
+				<li><span>▲</span> 前端前端前端前端..........................<em>前端前端前</em></li>
+				<li><span>▲</span> 前端前端前端前端..........................<em>前端前端前</em></li>
+			</ul>
+			<div class="con-rt-down1">
+				<span>0</span>
+				<table class="con-rt-down2">
+					<tr>
+						<td class="con-rt-down3"><em>ONE TWO</em></td>
+					</tr>
+					<tr>
+						<td class="con-rt-down3"><em>THREE FORE FIVE</em></td>
+					</tr>
+					<tr>
+						<td class="con-rt-down4">hello word hello word</td>
+					</tr>
+					<tr>
+						<td class="con-rt-down4">hello word hello</td>
+					</tr>
+				</table>
+			</div>
+			<div class="con-rt-down-down">
+				<p>
+				<em>hello word hello word
+					<br /> hello word hello word word
+					<br /> hello word hello word hello
+					<br /> hello word hello word hello
+					<br /> hello word word 
+				</em>
+				</p>
+				<span class="con-rt-down-down1" >“</span>
+				<span class="con-rt-down-down2" >”</span>
+			</div>
+	</div>
+	<div class="foot">
+		<hr />
+		<p>ife.baidu.com</p>
+	</div>
+	
+</body>
+</html>
